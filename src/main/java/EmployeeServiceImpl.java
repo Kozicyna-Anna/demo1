@@ -22,7 +22,7 @@ public class EmployeeServiceImpl implements EmloyeeService {
         return employee;
 
         @Override
-        public Employee remove(String firstName, String lastName){
+        public Employee remove(String firstName, String lastName) {
             Employee employee = new Employee(firstName, lastName);
             if (employeeList.contains(employee)) {
                 employeeList.remove(employee);
@@ -32,7 +32,7 @@ public class EmployeeServiceImpl implements EmloyeeService {
         }
 
         @Override
-        public Employee find(String firstName, String lastName){
+        public Employee find(String firstName, String lastName) {
             Employee employee = new Employee(firstName, lastName);
 
             if (employeeList.contains(employee)) {
@@ -42,8 +42,8 @@ public class EmployeeServiceImpl implements EmloyeeService {
             throw new EmployeeNotFoundException();
         }
         @Override
-        public Collection<Employee> findAll () {
-            return Collection.unmodifiablleList(employeeList);
+        public Collection<Employee> findAll() {
+            return Collection.unmodifiableList(employeeList);
         }
     }
 }
