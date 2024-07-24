@@ -1,12 +1,12 @@
 import java.util.Objects;
 
 public class Employee {
-    private final String lastName ;
+    private final String lastName;
     private final String firstName;
 
         public Employee(String firstName, String lastName) {
             this.lastName = lastName;
-            this.firstName = firstName ;
+            this.firstName = firstName;
         }
         public String getLastName() {
             return lastName;
